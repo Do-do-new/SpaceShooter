@@ -22,10 +22,10 @@ public class PlayerController : MonoBehaviour {
 	{
 		aud = GetComponent<AudioSource> ();
 		rb = GetComponent<Rigidbody> ();
-		boundaryProperties = boundary.GetComponent("Properties") as Properties;
+		boundaryProperties = boundary.GetComponent<Properties> ();
 	}
 
-	void FixedUpdate()
+	void FixedUpdate() 
 	{
 		Move ();
 	}
